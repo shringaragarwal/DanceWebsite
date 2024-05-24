@@ -1,0 +1,63 @@
+doctype html 
+html 
+    head 
+        style 
+            include ../static/styleHome.css 
+    body 
+        nav#navbar 
+           ul 
+                div#logo 
+                    img(src="/static/logo.jpg")
+                    |   SDA
+                li #[a(href="/") Home ]
+                li #[a(href="/") About Us] 
+                li #[a(href="/") Services ]
+                li #[a(href="/") Class Info] 
+                li #[a(href="/") Contact Us ]
+        section#introsection
+           div Welcome to Shri's Dance Academy 
+           div.small  Eat Sleep Dance Repeat
+
+        section#missionsection
+            h2 Our Mission 
+            div.card 
+                h3 Dance Perfection
+                div.card-box  
+                    div.card-img
+                        img.src(src="/static/mission1.jpg")
+                    div.card-content
+                        p Perfection is the key.
+            div.card 
+                h3 Dance the way you like
+                div.card-box  
+                    div.card-img
+                        img.src(src="/static/mission2.jpg")
+                    div.card-content
+                        p Enjoy the way you like.
+            div.card 
+                h3 Expert teaching
+                div.card-box  
+                    div.card-img
+                        img.src(src="/static/mission31.jpg")
+                    div.card-content
+                        p Expertize in any dance from experts.
+            div.card 
+                h3 Dance Forms
+                div.card-box  
+                    div.card-img
+                        img.src(src="/static/mission431.jpg")
+                    div.card-content
+                        p All dance forms available.
+                
+        section#sponsersection
+            h2 Our Sponser
+            div#sponsers
+                img.src(src="/static/amazon.jpg", class="sponser-img")
+                img.src(src="/static/meta.png",class="sponser-img")
+                img.src(src="/static/microsoft.png",class="sponser-img")
+                img.src(src="/static/netflix.jpg",class="sponser-img")
+
+        footer#footer
+           | Copyright @ 2024 ShriDanceAcademy.com All rights reserved
+        script 
+           include ../static/script.js
